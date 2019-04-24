@@ -14,12 +14,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
-
-    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+        // 190424 : UIApplication.LauchOptionsKey는 오류남
         // Override point for customization after application launch.
         
         let dialog = UIAlertController(title: "주의", message: "일부 기능이 동작하지 않습니다. [설정] 에서 허용할 수 있습니다.", preferredStyle: .alert)
-        let action = UIAlertAction(title: "확인", style: UIAlertAction.Style.default)
+        let action = UIAlertAction(title: "확인", style: UIAlertActionStyle.default) // 190424: UIAlertAction.Style은 오류남ㄴ
         dialog.addAction(action)
         
         //카메라 권한 묻기

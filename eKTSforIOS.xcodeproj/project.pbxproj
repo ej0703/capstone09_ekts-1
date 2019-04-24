@@ -13,7 +13,7 @@
 		48FFAEAC225B3E7F008E24A0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 48FFAEAA225B3E7F008E24A0 /* LaunchScreen.storyboard */; };
 		48FFAEB7225B3E7F008E24A0 /* eKTSforIOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48FFAEB6225B3E7F008E24A0 /* eKTSforIOSTests.swift */; };
 		48FFAEC2225B3E7F008E24A0 /* eKTSforIOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48FFAEC1225B3E7F008E24A0 /* eKTSforIOSUITests.swift */; };
-		48FFAED4225B4B7B008E24A0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 48FFAED3225B4B7B008E24A0 /* Assets.xcassets */; };
+		F9EF259E2270BCAA00F364F5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F9EF259D2270BCAA00F364F5 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,7 +46,7 @@
 		48FFAEBD225B3E7F008E24A0 /* eKTSforIOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = eKTSforIOSUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		48FFAEC1225B3E7F008E24A0 /* eKTSforIOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = eKTSforIOSUITests.swift; sourceTree = "<group>"; };
 		48FFAEC3225B3E7F008E24A0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		48FFAED3225B4B7B008E24A0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = "../../../소개이미지/IOS_Images/Assets.xcassets"; sourceTree = "<group>"; };
+		F9EF259D2270BCAA00F364F5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,7 +97,7 @@
 		48FFAEA0225B3E7D008E24A0 /* eKTSforIOS */ = {
 			isa = PBXGroup;
 			children = (
-				48FFAED3225B4B7B008E24A0 /* Assets.xcassets */,
+				F9EF259D2270BCAA00F364F5 /* Assets.xcassets */,
 				48FFAEA1225B3E7D008E24A0 /* AppDelegate.swift */,
 				48FFAEA3225B3E7D008E24A0 /* ViewController.swift */,
 				48FFAEA5225B3E7D008E24A0 /* Main.storyboard */,
@@ -230,7 +230,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				48FFAEAC225B3E7F008E24A0 /* LaunchScreen.storyboard in Resources */,
-				48FFAED4225B4B7B008E24A0 /* Assets.xcassets in Resources */,
+				F9EF259E2270BCAA00F364F5 /* Assets.xcassets in Resources */,
 				48FFAEA7225B3E7D008E24A0 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -300,6 +300,7 @@
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
+			wrapsLines = 1;
 		};
 		48FFAEAA225B3E7F008E24A0 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
@@ -441,7 +442,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.ektsMall.eKTSforIOS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -459,7 +460,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.ektsMall.eKTSforIOS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -471,6 +472,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = eKTSforIOSTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -491,6 +493,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = eKTSforIOSTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -510,6 +513,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = eKTSforIOSUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -529,6 +533,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = eKTSforIOSUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
