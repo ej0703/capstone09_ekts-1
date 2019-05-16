@@ -1,0 +1,6 @@
+framework module Pods_pushNotification_FirebaseUITests {
+  umbrella header "Pods-pushNotification_FirebaseUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
