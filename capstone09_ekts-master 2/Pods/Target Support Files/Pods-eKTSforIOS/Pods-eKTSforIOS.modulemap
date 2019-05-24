@@ -1,0 +1,6 @@
+framework module Pods_eKTSforIOS {
+  umbrella header "Pods-eKTSforIOS-umbrella.h"
+
+  export *
+  module * { export * }
+}
